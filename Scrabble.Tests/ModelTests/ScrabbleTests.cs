@@ -23,13 +23,24 @@ namespace Scrabble.Tests
       Assert.AreEqual("apple", apple.UserWord);
     }
 
+    // [TestMethod]
+    // public void GameConstructor_HasEmptyList_List()
+    // {
+    //   string word = "apple";
+    //   Game apple = new Game(word);
+    //   List<String> testList = new List<String>(){};
+    //   CollectionAssert.AreEqual(testList, apple.LetterList);
+    // }
+
     [TestMethod]
-    public void GameConstructor_HasEmptyList_List()
+    public void WordSplitter_SplitWordIntoLetters_List()
     {
       string word = "apple";
       Game apple = new Game(word);
-      List<String> testList = new List<String>(){};
-      CollectionAssert.AreEqual(testList, apple.LetterList);
+      // char[ ] wordArray = apple.UserWord.ToCharArray();
+      
+      string[] testArray = {"a","p","p","l","e"};
+      Assert.AreEqual(testArray, apple.WordSplitter());
     }
   } 
 }
