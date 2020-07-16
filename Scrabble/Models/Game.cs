@@ -1,6 +1,6 @@
 namespace Scrabble
 {
-  public class Scrab
+  public class Game
   {
     //code
   }
