@@ -1,4 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+using System;
 using Scrabble;
 
 namespace Scrabble.Tests
@@ -19,6 +21,15 @@ namespace Scrabble.Tests
       string word = "apple";
       Game apple = new Game(word); //"apple"
       Assert.AreEqual("apple", apple.UserWord);
+    }
+
+    [TestMethod]
+    public void GameConstructor_HasEmptyList_List()
+    {
+      string word = "apple";
+      Game apple = new Game(word);
+      List<String> testList = new List<String>(){};
+      CollectionAssert.AreEqual(testList, apple.LetterList);
     }
   } 
 }

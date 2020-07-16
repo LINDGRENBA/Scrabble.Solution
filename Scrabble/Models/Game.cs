@@ -6,11 +6,11 @@ namespace Scrabble
   public class Game
   {
     public string UserWord {get; set;} // auto-implemented property
-
+    public List<String> LetterList {get; set;}
     public Game(string userWord)
     {
       UserWord = userWord;
-      //List<String> letterList = new List<String> {"a"};
+      LetterList = new List<String>() {"a"};
     }
 
   }
