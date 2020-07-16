@@ -10,7 +10,7 @@ namespace Scrabble
     public Game(string userWord)
     {
       UserWord = userWord;
-      LetterList = new List<String>() {"a"};
+      LetterList = new List<String>() {};
     }
 
   }
