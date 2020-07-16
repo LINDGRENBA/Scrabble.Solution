@@ -12,5 +12,12 @@ namespace Scrabble.Tests
       Game newGame = new Game();
       Assert.AreEqual(typeof(Game), newGame.GetType());
     }
-  }
+
+    [TestMethod]
+    public void GameConstructor_HasUserWordField_String()
+    {
+      Game apple = new Game("apple");
+      Assert.AreEqual("apple", apple.UserWord);
+    }
+  } 
 }
