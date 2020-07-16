@@ -39,7 +39,7 @@ namespace Scrabble.Tests
       Game apple = new Game(word);
       // char[ ] wordArray = apple.UserWord.ToCharArray();
       
-      string[] testArray = {"a","p","p","l","e"};
+      char[] testArray = word.ToCharArray();
       Assert.AreEqual(testArray, apple.WordSplitter());
     }
   } 

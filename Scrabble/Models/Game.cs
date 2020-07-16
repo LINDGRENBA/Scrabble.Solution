@@ -13,11 +13,11 @@ namespace Scrabble
       // LetterList = new List<String>() {};
     }
 
-    public string[] WordSplitter()
+    public char[] WordSplitter()
     {
       // char[] wordArray = UserWord.ToCharArray();
-      string[] wrongArray = {"o", "r", "a", "n", "g", "e"};
-      return wrongArray;
+      char[] wordArray = UserWord.ToCharArray();
+      return wordArray;
     }
 
   }
