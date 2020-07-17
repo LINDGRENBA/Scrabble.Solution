@@ -40,7 +40,7 @@ namespace Scrabble.Tests
       // char[ ] wordArray = apple.UserWord.ToCharArray();
       
       char[] testArray = word.ToCharArray();
-      Assert.AreEqual(testArray, apple.WordSplitter());
+      CollectionAssert.AreEqual(testArray, apple.WordSplitter());
     }
   } 
 }
